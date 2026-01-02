@@ -4,23 +4,40 @@
     brewPrefix = "/opt/homebrew/bin";
 
     taps = [
-      #"homebrew/core"
+      #"homebrew/cask-fonts"
       #"homebrew/cask"
     ];
 
     brews = [
+      "bat"
+      "btop"
       "jq"
       "ripgrep"
-      #"fd"
-      #"gh"
+      "fd"
+      "fzf"
+      "neovim"
+      "nmap"
+      "tlrc"
+      "trash"
+      "tree"
+      "ruff"
+      "uv"
+      "yq"
+      "zoxide"
     ];
 
     casks = [
+      #"1password"
+      #"1password-cli"
+      "brave-browser"
+      #"firefox"
       "ghostty"
       #"google-chrome"
-      #"visual-studio-code"
+      #"google-drive"
+      #"iterm2"
+      #"obsidian"
       #"raycast"
-      #"1password"
+      #"visual-studio-code"
     ];
 
     onActivation = {
