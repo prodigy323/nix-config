@@ -80,8 +80,8 @@
     alias rm="trash"
     alias rmdir="trash"
     alias cat="bat -Pp"
-    #alias ls="colorls --group-directories-first"
-    #alias l="ls -1"
+    alias ls="eza"
+    alias l="ls -1"
     alias fzf="fzf --preview 'bat --style=numbers --color=always {}'"
   '';
 }
