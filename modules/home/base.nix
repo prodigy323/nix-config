@@ -51,6 +51,10 @@
     initContent = ''
       bindkey -v
       eval "$(starship init zsh)"
+
+      if [ -f "$HOME/.config/zsh/zsh_aliases" ]; then
+        source $HOME/.config/zsh/zsh_aliases"
+      fi
     '';
   };
 
@@ -58,16 +62,26 @@
   ## Ghostty
   ## ─────────────
   xdg.configFile."ghostty/config".text = ''
-  # Key Bindings
-  keybind = global:cmd+y=toggle_quick_terminal
-  
-  # Options
-  quick-terminal-position = center
-  # disable animation
-  quick-terminal-animation-duration = 0
-  # don't hide when quick term loses focus
-  quick-terminal-autohide = false
+    # Key Bindings
+    keybind = global:cmd+y=toggle_quick_terminal
+    
+    # Options
+    quick-terminal-position = center
+    # disable animation
+    quick-terminal-animation-duration = 0
+    # don't hide when quick term loses focus
+    quick-terminal-autohide = false
   '';
 
+  ## ─────────────
+  ## zsh_aliases
+  ## ─────────────
+  xdg.configFile."zsh/zsh_aliases".text = ''
+    alias rm="trash"
+    alias rmdir="trash"
+    alias cat="bat -Pp"
+    alias l="ls -1"
+    alias fzf="fzf --preview 'bat --style=numbers --color=always {}'"
+  '';
 }
 
