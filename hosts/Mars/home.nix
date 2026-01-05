@@ -9,8 +9,8 @@
     };
   };
 
-  home.packages = with pkgs; [
-    # Mars-only tools
-  ];
+  xdg.configFile."zsh/zsh_aliases_mars".text = ''
+    alias vi = nvim
+  '';
 }
 

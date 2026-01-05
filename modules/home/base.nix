@@ -11,19 +11,8 @@
   ## ─────────────
   ## Starship
   ## ─────────────
-  programs.starship = {
-    enable = true;
-
-    settings = {
-      add_newline = false;
-      command_timeout = 1000;
-
-      character = {
-        success_symbol = "[❯](bold green)";
-        error_symbol = "[❯](bold red)";
-      };
-    };
-  };
+  programs.starship.enable = true;
+  xdg.configFile."starship.toml".source = ../../dotfiles/starship/starship.toml
 
   ## ─────────────
   ## Zsh + Oh-My-Zsh
@@ -46,14 +35,50 @@
         "aws"
       ];
     };
- 
+
     # Extra shell init (this is where Starship hooks in)
     initContent = ''
       bindkey -v
       eval "$(starship init zsh)"
 
+      # load shared aliases
       if [ -f "$HOME/.config/zsh/zsh_aliases" ]; then
         source "$HOME/.config/zsh/zsh_aliases"
+      fi
+
+      # load per-host aliases for Mars
+      if [ -f "$HOME/.config/zsh/zsh_aliases_mars" ]; then
+        source "$HOME/.config/zsh/zsh_aliases_mars"
+      fi
+
+      # load per-host aliases for Aero
+      if [ -f "$HOME/.config/zsh/zsh_aliases_aero" ]; then
+        source "$HOME/.config/zsh/zsh_aliases_aero"
+      fi
+
+      # load per-host aliases for Venus
+      if [ -f "$HOME/.config/zsh/zsh_aliases_venus" ]; then
+        source "$HOME/.config/zsh/zsh_aliases_venus"
+      fi
+
+      # load shared functions
+      if [ -f "$HOME/.config/zsh/zsh_functions" ]; then
+        source "$HOME/.config/zsh/zsh_functions"
+      fi
+
+      # load per-host functions for Mars
+      if [ -f "$HOME/.config/zsh/zsh_functions_mars" ]; then
+        source "$HOME/.config/zsh/zsh_functions_mars"
+      fi
+
+      # load per-host functions for Aero
+      if [ -f "$HOME/.config/zsh/zsh_functions_aero" ]; then
+        source "$HOME/.config/zsh/zsh_functions_aero"
+      fi
+
+      # load per-host functions for Venus
+      if [ -f "$HOME/.config/zsh/zsh_functions_venus" ]; then
+        source "$HOME/.config/zsh/zsh_functions_venus"
       fi
     '';
   };
@@ -64,7 +89,7 @@
   xdg.configFile."ghostty/config".text = ''
     # Key Bindings
     keybind = global:cmd+y=toggle_quick_terminal
-    
+
     # Options
     quick-terminal-position = center
     # disable animation

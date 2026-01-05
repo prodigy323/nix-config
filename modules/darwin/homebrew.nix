@@ -28,17 +28,11 @@
     ];
 
     casks = [
-      #"1password"
-      #"1password-cli"
       "brave-browser"
       #"firefox"
       "ghostty"
       #"google-chrome"
-      #"google-drive"
       #"iterm2"
-      #"obsidian"
-      #"raycast"
-      #"visual-studio-code"
     ];
 
     onActivation = {
