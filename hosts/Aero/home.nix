@@ -10,6 +10,6 @@
   };
 
   xdg.configFile."zsh/zsh_aliases_aero".text = ''
-    alias vi = nvim
+    alias vi="nvim"
   '';
 }
