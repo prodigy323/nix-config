@@ -3,10 +3,7 @@
     enable = true;
     brewPrefix = "/opt/homebrew/bin";
 
-    taps = [
-      #"homebrew/cask-fonts"
-      #"homebrew/cask"
-    ];
+    taps = [];
 
     brews = [
       "bat"
@@ -33,6 +30,8 @@
       "ghostty"
       #"google-chrome"
       #"iterm2"
+      "font-meslo-lg-nerd-font"
+      "font-symbols-only-nerd-font"
     ];
 
     onActivation = {
