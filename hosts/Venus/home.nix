@@ -125,4 +125,12 @@
             --profile "$profile" \
             --region "$region"
     }
+  '';
+
+  # mise - per-host override
+  #xdg.configFile."mise/config.toml".text = ''
+  #  [tools]
+  #  node = "24.13.0"
+  #  python = "3.14.2"
+  #'';
 }

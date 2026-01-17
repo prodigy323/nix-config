@@ -26,4 +26,11 @@
   xdg.configFile."zsh/zsh_aliases_aero".text = ''
     alias vi="nvim"
   '';
+
+  # mise - per-host override
+  #xdg.configFile."mise/config.toml".text = ''
+  #  [tools]
+  #  node = "24.13.0"
+  #  python = "3.14.2"
+  #'';
 }

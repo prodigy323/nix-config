@@ -1,4 +1,4 @@
-{ pkgs, inputs, username, ... }:
+{ pkgs, inputs, username, config, ... }:
 
 {
   # Determinate Nix: nix-darwin must not manage the Nix installation/daemon

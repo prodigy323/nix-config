@@ -28,5 +28,12 @@
     alias ndb="sudo darwin-rebuild build --flake .#Mars"
     alias nds="sudo darwin-rebuild switch --flake .#Mars"
   '';
+
+  # mise - per-host override
+  #xdg.configFile."mise/config.toml".text = ''
+  #  [tools]
+  #  node = "24.13.0"
+  #  python = "3.14.2"
+  #'';
 }
 

@@ -9,6 +9,7 @@
       "bat"
       "btop"
       "eza"
+      "gnupg"
       "jq"
       "neovim"
       "nmap"

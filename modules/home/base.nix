@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, lib, ... }:
 
 {
   home.stateVersion = "23.11";
@@ -72,6 +72,46 @@
     quick-terminal-animation-duration = 0
     # don't hide when quick term loses focus
     quick-terminal-autohide = false
+  '';
+
+  ## mise - set global versions; can be overridden for each host, as well as for each project
+  xdg.configFile."mise/config.toml".text = ''
+    [tools]
+    node = "24.13.0"
+    python = "3.14.2"
+  '';
+
+  # mise - execute install and reshim when global versions changes in ~/.config/mise/config.toml
+  home.activation.miseInstall = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    set -euo pipefail
+
+    MISE_CFG="$HOME/.config/mise/config.toml"
+    STAMP_DIR="$HOME/.local/state/nix-darwin"
+    STAMP_FILE="$STAMP_DIR/mise-config.sha256"
+
+    # Only run if mise config exists
+    if [ ! -f "$MISE_CFG" ]; then
+      echo "mise config not found at $MISE_CFG; skipping"
+      exit 0
+    fi
+
+    mkdir -p "$STAMP_DIR"
+
+    NEW_HASH="$(/usr/bin/shasum -a 256 "$MISE_CFG" | /usr/bin/awk '{print $1}')"
+    OLD_HASH="$(cat "$STAMP_FILE" 2>/dev/null || true)"
+
+    if [ "$NEW_HASH" = "$OLD_HASH" ]; then
+      echo "mise config unchanged; skipping install/reshim"
+      exit 0
+    fi
+
+    echo "mise config changed; running mise install + reshim"
+
+    # Run as the user, with a sane HOME
+    ${pkgs.mise}/bin/mise install
+    ${pkgs.mise}/bin/mise reshim
+
+    echo "$NEW_HASH" > "$STAMP_FILE"
   '';
 
   ## zsh_aliases
