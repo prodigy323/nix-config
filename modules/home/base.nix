@@ -8,6 +8,10 @@
   # Example dotfile
   # home.file.".zshrc".source = ./dotfiles/zshrc;
 
+  home.packages = with pkgs; [
+    mise
+  ];
+
   ## ─────────────
   ## Starship
   ## ─────────────
@@ -40,45 +44,16 @@
     initContent = ''
       bindkey -v
       eval "$(starship init zsh)"
+      eval "$(mise activate zsh)"
 
       # load shared aliases
       if [ -f "$HOME/.config/zsh/zsh_aliases" ]; then
         source "$HOME/.config/zsh/zsh_aliases"
       fi
 
-      # load per-host aliases for Mars
-      if [ -f "$HOME/.config/zsh/zsh_aliases_mars" ]; then
-        source "$HOME/.config/zsh/zsh_aliases_mars"
-      fi
-
-      # load per-host aliases for Aero
-      if [ -f "$HOME/.config/zsh/zsh_aliases_aero" ]; then
-        source "$HOME/.config/zsh/zsh_aliases_aero"
-      fi
-
-      # load per-host aliases for Venus
-      if [ -f "$HOME/.config/zsh/zsh_aliases_venus" ]; then
-        source "$HOME/.config/zsh/zsh_aliases_venus"
-      fi
-
       # load shared functions
       if [ -f "$HOME/.config/zsh/zsh_functions" ]; then
         source "$HOME/.config/zsh/zsh_functions"
-      fi
-
-      # load per-host functions for Mars
-      if [ -f "$HOME/.config/zsh/zsh_functions_mars" ]; then
-        source "$HOME/.config/zsh/zsh_functions_mars"
-      fi
-
-      # load per-host functions for Aero
-      if [ -f "$HOME/.config/zsh/zsh_functions_aero" ]; then
-        source "$HOME/.config/zsh/zsh_functions_aero"
-      fi
-
-      # load per-host functions for Venus
-      if [ -f "$HOME/.config/zsh/zsh_functions_venus" ]; then
-        source "$HOME/.config/zsh/zsh_functions_venus"
       fi
     '';
   };

@@ -7,7 +7,6 @@
   homebrew = {
     brews = [
       "httpie"
-      "mise"
     ];
 
     casks = [
@@ -15,4 +14,3 @@
     ];
   };
 }
-

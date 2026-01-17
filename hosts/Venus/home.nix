@@ -9,6 +9,20 @@
     };
   };
 
+  programs.zsh = {
+    initContent = ''
+      # load per-host aliases for Venus
+      if [ -f "$HOME/.config/zsh/zsh_aliases_venus" ]; then
+        source "$HOME/.config/zsh/zsh_aliases_venus"
+      fi
+
+      # load per-host functions for Venus
+      if [ -f "$HOME/.config/zsh/zsh_functions_venus" ]; then
+        source "$HOME/.config/zsh/zsh_functions_venus"
+      fi
+    '';
+  }
+
   xdg.configFile."zsh/zsh_aliases_venus".text = ''
     alias rm="trash"
     alias tf="terraform"
