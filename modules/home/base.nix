@@ -10,17 +10,20 @@
 
   home.packages = with pkgs; [
     mise
+    fd
   ];
 
-  ## ─────────────
   ## Starship
-  ## ─────────────
   programs.starship.enable = true;
   xdg.configFile."starship.toml".source = ../../dotfiles/starship/starship.toml;
 
-  ## ─────────────
+  ## FZF
+  programs.fzf = {
+    enable = true;
+    enableZshIntegration = true;
+  };
+
   ## Zsh + Oh-My-Zsh
-  ## ─────────────
   programs.zsh = {
     enable = true;
 
@@ -58,9 +61,7 @@
     '';
   };
 
-  ## ─────────────
   ## Ghostty
-  ## ─────────────
   xdg.configFile."ghostty/config".text = ''
     # Key Bindings
     keybind = global:cmd+y=toggle_quick_terminal
@@ -73,9 +74,7 @@
     quick-terminal-autohide = false
   '';
 
-  ## ─────────────
   ## zsh_aliases
-  ## ─────────────
   xdg.configFile."zsh/zsh_aliases".text = ''
     alias rm="trash"
     alias rmdir="trash"

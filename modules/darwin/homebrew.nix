@@ -9,8 +9,6 @@
       "bat"
       "btop"
       "eza"
-      "fd"
-      "fzf"
       "jq"
       "neovim"
       "nmap"
