@@ -31,8 +31,6 @@
       "font-symbols-only-nerd-font"
       "google-drive"
       "obsidian"
-      "raycast"
-      "shottr"
       "todoist"
       "todoist-app"
       "visual-studio-code"

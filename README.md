@@ -23,6 +23,13 @@ nix flake --help
 
 ## Usage
 
+- Create local SSH key
+
+```sh
+ssh-keygen -t ed25519
+```
+
+- Add the SSH key to Github account `prodigy323`
 - Clone this repository
 
 ```sh

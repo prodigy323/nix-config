@@ -26,11 +26,13 @@
     casks = [
       "brave-browser"
       #"firefox"
+      "font-meslo-lg-nerd-font"
+      "font-symbols-only-nerd-font"
       "ghostty"
       #"google-chrome"
       #"iterm2"
-      "font-meslo-lg-nerd-font"
-      "font-symbols-only-nerd-font"
+      "raycast"
+      "shottr"
     ];
 
     onActivation = {
