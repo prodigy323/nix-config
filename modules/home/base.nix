@@ -13,6 +13,10 @@
     fd
   ];
 
+  home.activation.createLocalDevDir = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
+    mkdir -p "$HOME/localdev"
+  '';
+
   ## Starship
   programs.starship.enable = true;
   xdg.configFile."starship.toml".source = ../../dotfiles/starship/starship.toml;

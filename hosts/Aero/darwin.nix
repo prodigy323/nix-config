@@ -16,7 +16,6 @@
       "docker-compose"
       "gh"
       "httpie"
-      "mise"
       "sevenzip"
       #"tmux"
       #"zellij"

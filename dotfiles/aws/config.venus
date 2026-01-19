@@ -1,0 +1,2917 @@
+[default]
+cli_auto_prompt = off
+
+##########
+# Localstack
+##########
+
+[profile localstack]
+region = us-east-1
+output = json
+endpoint_url = http://localhost.localstack.cloud:4566
+
+##########
+# Alpha
+##########
+
+[profile valphamasterro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphamasterro --json
+
+[profile alphamasterro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 533267190695
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphamaster]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphamaster --json
+
+[profile alphamaster]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 533267190695
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphaauditro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphaauditro --json
+
+[profile alphaauditro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 975050122065
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphaaudit]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphaaudit --json
+
+[profile alphaaudit]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 975050122065
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphalogsro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphalogsro --json
+
+[profile alphalogsro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 211125316649
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphalogs]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphalogs --json
+
+[profile alphalogs]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 211125316649
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphamgmtro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphamgmtro --json
+
+[profile alphamgmtro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 354096886483
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphamgmt]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphamgmt --json
+
+[profile alphamgmt]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 354096886483
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphaprodro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphaprodro --json
+
+[profile alphaprodro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 851725480346
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphaprod]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphaprod --json
+
+[profile alphaprod]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 851725480346
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphasbro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphasbro --json
+
+[profile alphasbro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 533266982066
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphasb]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphasb --json
+
+[profile alphasb]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 533266982066
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+
+##########
+# Beta
+##########
+
+[profile vbetaauditro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betaauditro --json
+
+[profile betaauditro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 047732578206
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetaaudit]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betaaudit --json
+
+[profile betaaudit]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 047732578206
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetamasterro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betamasterro --json
+
+[profile betamasterro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 615322001392
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetamaster]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betamaster --json
+
+[profile betamaster]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 615322001392
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetalogsro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betalogsro --json
+
+[profile betalogsro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 133171600768
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetalogs]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betalogs --json
+
+[profile betalogs]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 133171600768
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetamgmtro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betamgmtro --json
+
+[profile betamgmtro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 992382671765
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetamgmt]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betamgmt --json
+
+[profile betamgmt]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 992382671765
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetaprodro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betaprodro --json
+
+[profile betaprodro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 471112924406
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetaprod]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betaprod --json
+
+[profile betaprod]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 471112924406
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetasb1ro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betasb1ro --json
+
+[profile betasb1ro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 730335367332
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetasb1]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betasb1 --json
+
+[profile betasb1]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 730335367332
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetasb2ro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betasb2ro --json
+
+[profile betasb2ro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 058264364169
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetasb2]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betasb2 --json
+
+[profile betasb2]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 058264364169
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+
+##########
+# APPS Org
+##########
+
+[profile vaisbx]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec aisbx --json
+
+[profile aisbx]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 907969929390
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vaudit]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec audit --json
+
+[profile audit]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 479028354289
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vauditro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec auditro --json
+
+[profile auditro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 479028354289
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vappscalegacy]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec appscalegacy --json
+
+[profile appscalegacy]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 761724984605
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vappscalegacyro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec appscalegacyro --json
+
+[profile appscalegacyro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 761724984605
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vappsosdev]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec appsosdev --region us-east-2 --json
+
+[profile appsosdev]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 715432480423
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vappsosdevro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec appsosdevro --region us-east-2 --json
+
+[profile appsosdevro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 715432480423
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vappsosdevnw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec appsosdevnw --region us-east-2 --json
+
+[profile appsosdevnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 715432480423
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vappsosqa]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec appsosqa --region us-east-2 --json
+
+[profile appsosqa]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 700432344475
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vappsosqaro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec appsosqaro --region us-east-2 --json
+
+[profile appsosqaro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 700432344475
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vappsosqanw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec appsosqanw --region us-east-2 --json
+
+[profile appsosqanw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 700432344475
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vappsosprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec appsosprod --json
+
+[profile appsosprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 987650017555
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vappsosprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec appsosprodro --json
+
+[profile appsosprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 987650017555
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vappsosprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec appsosprodnw --json
+
+[profile appsosprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 987650017555
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vblockchypdev]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec blockchypdev --json
+
+[profile blockchypdev]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 105741232974
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vblockchypdevro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec blockchypdevro --json
+
+[profile blockchypdevro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 105741232974
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vblockchypdevnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec blockchypdevnw --json
+
+[profile blockchypdevnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 105741232974
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vblockchypprodcde]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec blockchypprodcde --json
+
+[profile blockchypprodcde]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 477954032159
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vblockchypprodcdero]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec blockchypprodcdero --json
+
+[profile blockchypprodcdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 477954032159
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vblockchypprodcdenw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec blockchypprodcdenw --json
+
+[profile blockchypprodcdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 477954032159
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vblockchypstaging]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec blockchypstaging --json
+
+[profile blockchypstaging]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 358731319633
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vblockchypstagingro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec blockchypstagingro --json
+
+[profile blockchypstagingro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 358731319633
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vblockchypstagingnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec blockchypstagingnw --json
+
+[profile blockchypstagingnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 358731319633
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxnonprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxnonprod --json
+
+[profile cardxnonprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 120147905574
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxnonprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxnonprodro --json
+
+[profile cardxnonprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 120147905574
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxnonprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxnonprodnw --json
+
+[profile cardxnonprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 120147905574
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxnonprodcde]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxnonprodcde --json
+
+[profile cardxnonprodcde]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 617807631226
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxnonprodcdero]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxnonprodcdero --json
+
+[profile cardxnonprodcdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 617807631226
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxnonprodcdenw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxnonprodcdenw --json
+
+[profile cardxnonprodcdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 617807631226
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxsandbox]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxsandbox --json
+
+[profile cardxsandbox]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 492297341765
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxsandboxro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxsandboxro --json
+
+[profile cardxsandboxro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 492297341765
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxsandboxnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxsandboxnw --json
+
+[profile cardxsandboxnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 492297341765
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxprod --json
+
+[profile cardxprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 683906574443
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxprodro --json
+
+[profile cardxprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 683906574443
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxprodnw --json
+
+[profile cardxprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 683906574443
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxprodcdenw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxprodcdenw --json
+
+[profile cardxprodcdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 202904631667
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxprodlegacy]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxprodlegacy --json
+
+[profile cardxprodlegacy]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 950816880065
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxprodlegacyro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxprodlegacyro --json
+
+[profile cardxprodlegacyro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 950816880065
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcardxprodlegacynw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cardxprodlegacynw --json
+
+[profile cardxprodlegacynw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 950816880065
+sso_role_name = AWSCloudNetworkAdministrator\
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcentralauth]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec centralauth --json
+
+[profile centralauth]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 613351366246
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcentralauthro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec centralauthro --json
+
+[profile centralauthro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 613351366246
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcentralnetworking]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec centralnetworking --json
+
+[profile centralnetworking]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 619418045315
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcentralnetworkingro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec centralnetworkingro --json
+
+[profile centralnetworkingro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 619418045315
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcentralnetworkingnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec centralnetworkingnw --json
+
+[profile centralnetworkingnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 619418045315
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcliqueprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cliqueprod --json
+
+[profile cliqueprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 446276422319
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcliqueprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cliqueprodro --json
+
+[profile cliqueprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 446276422319
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcliqueprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cliqueprodnw --json
+
+[profile cliqueprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 446276422319
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcloudeng]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cloudeng --json
+
+[profile cloudeng]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 396651852419
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vcloudengro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec cloudengro --json
+
+[profile cloudengro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 396651852419
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vconformancedev]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec conformancedev --region us-east-2 --json
+
+[profile conformancedev]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 490004625805
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vconformancedevro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec conformancedevro --region us-east-2 --json
+
+[profile conformancedevro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 490004625805
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vconformancedevnw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec conformancedevnw --region us-east-2 --json
+
+[profile conformancedevnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 490004625805
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vconformanceqa]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec conformanceqa --region us-east-2 --json
+
+[profile conformanceqa]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 207567796219
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vconformanceqaro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec conformanceqaro --region us-east-2 --json
+
+[profile conformanceqaro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 207567796219
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vconformanceqanw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec conformanceqanw --region us-east-2 --json
+
+[profile conformanceqanw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 207567796219
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vconformanceprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec conformanceprod --json
+
+[profile conformanceprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 673125337693
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vconformanceprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec conformanceprodro --json
+
+[profile conformanceprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 673125337693
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vconformanceprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec conformanceprodnw --json
+
+[profile conformanceprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 673125337693
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vdatabi]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec databi --json
+
+[profile databi]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 637423456145
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vdatabiro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec databiro --json
+
+[profile databiro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 637423456145
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vdatabaseeng]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec databaseeng --json
+
+[profile databaseeng]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 804859200656
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vdatabaseengro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec databaseengro --json
+
+[profile databaseengro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 804859200656
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vdatabaseengnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec databaseengnw --json
+
+[profile databaseengnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 804859200656
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vdevops]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec devops --json
+
+[profile devops]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 652366863559
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vdevopsro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec devopsro --json
+
+[profile devopsro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 652366863559
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile veverestdev]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec everestdev --region us-east-2 --json
+
+[profile everestdev]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 440744247469
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile veverestdevro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec everestdevro --region us-east-2 --json
+
+[profile everestdevro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 440744247469
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile veverestdevnw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec everestdevnw --region us-east-2 --json
+
+[profile everestdevnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 440744247469
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile veverestqa]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec everestqa --region us-east-2 --json
+
+[profile everestqa]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 288761739347
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile veverestqaro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec everestqaro --region us-east-2 --json
+
+[profile everestqaro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 288761739347
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile veverestqanw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec everestqanw --region us-east-2 --json
+
+[profile everestqanw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 288761739347
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile veverestprodcde]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec everestprodcde --json
+
+[profile everestprodcde]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 664142702178
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile veverestprodcdero]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec everestprodcdero --json
+
+[profile everestprodcdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 664142702178
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile veverestprodcdenw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec everestprodcdenw --json
+
+[profile everestprodcdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 664142702178
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vinfosecteamro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec infosecteamro --json
+
+[profile infosecteamro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 160885248934
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vinfosecteamnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec infosecteamnw --json
+
+[profile infosecteamnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 160885248934
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vlogarchive]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec logarchive --json
+
+[profile logarchive]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 106839711072
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vlogarchivero]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec logarchivero --json
+
+[profile logarchivero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 106839711072
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vmgmtro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec mgmtro --json
+
+[profile mgmtro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 926574304605
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vmgmt]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec mgmt --json
+
+[profile mgmt]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 926574304605
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vmgmtnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec mgmtnw --json
+
+[profile mgmtnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 926574304605
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vnetsecops]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec netsecops --json
+
+[profile netsecops]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 120245984563
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vnetsecopsro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec netsecopsro --json
+
+[profile netsecopsro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 120245984563
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile volympusdev]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusdev --region us-east-2 --json
+
+[profile olympusdev]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 783764581371
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusdevro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusdevro --region us-east-2 --json
+
+[profile olympusdevro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 783764581371
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusdevnw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusdevnw --region us-east-2 --json
+
+[profile olympusdevnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 783764581371
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusdevcde]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusdevcde --region us-east-2 --json
+
+[profile olympusdevcde]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 767397831620
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusdevcdero]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusdevcdero --region us-east-2 --json
+
+[profile olympusdevcdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 767397831620
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusdevcdenw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusdevcdenw --region us-east-2 --json
+
+[profile olympusdevcdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 767397831620
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusqa]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusqa --region us-east-2 --json
+
+[profile olympusqa]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 879381253241
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusqaro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusqaro --region us-east-2 --json
+
+[profile olympusqaro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 879381253241
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusqanw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusqanw --region us-east-2 --json
+
+[profile olympusqanw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 879381253241
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusqacde]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusqacde --region us-east-2 --json
+
+[profile olympusqacde]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 767397681929
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusqacdero]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusqacdero --region us-east-2 --json
+
+[profile olympusqacdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 767397681929
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusqacdenw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusqacdenw --region us-east-2 --json
+
+[profile olympusqacdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 767397681929
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile volympusprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusprod --json
+
+[profile olympusprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 682033462863
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile volympusprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusprodro --json
+
+[profile olympusprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 682033462863
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile volympusprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusprodnw --json
+
+[profile olympusprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 682033462863
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile volympusprodcde]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusprodcde --json
+
+[profile olympusprodcde]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 354676517065
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile volympusprodcdero]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusprodcdero --json
+
+[profile olympusprodcdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 354676517065
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile volympusprodcdenw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec olympusprodcdenw --json
+
+[profile olympusprodcdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 354676517065
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vpolicystaging1]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec policystaging1 --json
+
+[profile policystaging1]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 211125744779
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vpolicystaging1ro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec policystaging1ro --json
+
+[profile policystaging1ro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 211125744779
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vpolicystaging1nw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec policystaging1nw --json
+
+[profile policystaging1nw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 211125744779
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+#[profile vresidualsdev]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec residualsdev --json
+#
+#[profile residualsdev]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 637423305257
+#sso_role_name = AWSAdministratorAccess
+#region = us-west-2
+#output = text
+#cli_pager=
+#
+#[profile vresidualsdevro]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec residualsdevro --json
+#
+#[profile residualsdevro]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 637423305257
+#sso_role_name = AWSReadOnlyAccess
+#region = us-west-2
+#output = text
+#cli_pager=
+#
+#[profile vresidualsdevnw]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec residualsdevnw --json
+#
+#[profile residualsdevnw]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 637423305257
+#sso_role_name = AWSCloudNetworkAdministrator
+#region = us-west-2
+#output = text
+#cli_pager=
+#
+#[profile vresidualsprod]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec residualsprod --json
+#
+#[profile residualsprod]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 654654396561
+#sso_role_name = AWSAdministratorAccess
+#region = us-west-2
+#output = text
+#cli_pager=
+#
+#[profile vresidualsprodro]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec residualsprodro --json
+#
+#[profile residualsprodro]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 654654396561
+#sso_role_name = AWSReadOnlyAccess
+#region = us-west-2
+#output = text
+#cli_pager=
+#
+#[profile vresidualsprodnw]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec residualsprodnw --json
+#
+#[profile residualsprodnw]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 654654396561
+#sso_role_name = AWSCloudNetworkAdministrator
+#region = us-west-2
+#output = text
+#cli_pager=
+#
+#[profile vresidualsqa]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec residualsqa --json
+#
+#[profile residualsqa]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 767398023945
+#sso_role_name = AWSAdministratorAccess
+#region = us-west-2
+#output = text
+#cli_pager=
+#
+#[profile vresidualsqaro]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec residualsqaro --json
+#
+#[profile residualsqaro]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 767398023945
+#sso_role_name = AWSReadOnlyAccess
+#region = us-west-2
+#output = text
+#cli_pager=
+#
+#[profile vresidualsqanw]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec residualsqanw --json
+#
+#[profile residualsqanw]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 767398023945
+#sso_role_name = AWSCloudNetworkAdministrator
+#region = us-west-2
+#output = text
+#cli_pager=
+
+[profile vriskenginedev]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec riskenginedev --region us-east-2 --json
+
+[profile riskenginedev]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 140023361064
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vriskenginedevro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec riskenginedevro --region us-east-2 --json
+
+[profile riskenginedevro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 140023361064
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vriskenginedevnw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec riskenginedevnw --region us-east-2 --json
+
+[profile riskenginedevnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 140023361064
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vriskengineqa]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec riskengineqa --region us-east-2 --json
+
+[profile riskengineqa]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 217969843981
+sso_role_name = AWSAdministratorAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vriskengineqaro]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec riskengineqaro --region us-east-2 --json
+
+[profile riskengineqaro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 217969843981
+sso_role_name = AWSReadOnlyAccess
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vriskengineqanw]
+region = us-east-2
+credential_process = /opt/homebrew/bin/aws-vault exec riskengineqanw --region us-east-2 --json
+
+[profile riskengineqanw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 217969843981
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-east-2
+output = text
+cli_pager=
+
+[profile vriskengineprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec riskengineprod --json
+
+[profile riskengineprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 976191358156
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vriskengineprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec riskengineprodro --json
+
+[profile riskengineprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 976191358156
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vriskengineprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec riskengineprodnw --json
+
+[profile riskengineprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 976191358156
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vsecops]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec secops --json
+
+[profile secops]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 779642616235
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vsecopsro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec secopsro --json
+
+[profile secopsro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 779642616235
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vsecurityvisualization]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec securityvisualization --json
+
+[profile securityvisualization]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 440744237754
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vsecurityvisualizationro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec securityvisualizationro --json
+
+[profile securityvisualizationro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 440744237754
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vsecurityvisualizationnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec securityvisualizationnw --json
+
+[profile securityvisualizationnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 440744237754
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vvirtualdesktopusersro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec virtualdesktopusersro --json
+
+[profile virtualdesktopusersro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 992382615914
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillcdedev]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillcdedev --json
+
+[profile staxbillcdedev]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 991640806235
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillcdedevro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillcdedevro --json
+
+[profile staxbillcdedevro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 991640806235
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillcdedevnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillcdedevnw --json
+
+[profile staxbillcdedevnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 991640806235
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillcdeqa]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillcdeqa --json
+
+[profile staxbillcdeqa]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 741354519604
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillcdeqaro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillcdeqaro --json
+
+[profile staxbillcdeqaro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 741354519604
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillcdeqanw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillcdeqanw --json
+
+[profile staxbillcdeqanw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 741354519604
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbilldev]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbilldev --json
+
+[profile staxbilldev]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 911242880795
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbilldevro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbilldevro --json
+
+[profile staxbilldevro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 911242880795
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbilldevnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbilldevnw --json
+
+[profile staxbilldevnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 911242880795
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillprod --json
+
+[profile staxbillprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 487835986107
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillprodro --json
+
+[profile staxbillprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 487835986107
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillprodnw --json
+
+[profile staxbillprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 487835986107
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+#[profile vstaxbillprodcde]
+#region = us-west-2
+#credential_process = /opt/homebrew/bin/aws-vault exec staxbillprodcde --json
+
+#[profile staxbillprodcde]
+#sso_start_url = https://d-926764b207.awsapps.com/start#/
+#sso_region = us-west-2
+#sso_account_id = 657025262895
+#sso_role_name = AWSAdministratorAccess
+#region = us-west-2
+#output = text
+#cli_pager=
+
+[profile vstaxbillprodcdero]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillprodcdero --json
+
+[profile staxbillprodcdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 657025262895
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillprodcdenw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillprodcdenw --json
+
+[profile staxbillprodcdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 657025262895
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillqa]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillqa --json
+
+[profile staxbillqa]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 134757727425
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillqaro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillqaro --json
+
+[profile staxbillqaro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 134757727425
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxbillqanw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxbillqanw --json
+
+[profile staxbillqanw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 134757727425
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoresandbox]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoresandbox --json
+
+[profile staxcoresandbox]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 144944582707
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoresandboxro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoresandboxro --json
+
+[profile staxcoresandboxro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 144944582707
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoresandboxnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoresandboxnw --json
+
+[profile staxcoresandboxnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 144944582707
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcorequickdemo]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcorequickdemo --json
+
+[profile staxcorequickdemo]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 751951353684
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcorequickdemoro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcorequickdemoro --json
+
+[profile staxcorequickdemoro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 751951353684
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcorequickdemonw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcorequickdemonw --json
+
+[profile staxcorequickdemonw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 751951353684
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoredev]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoredev --json
+
+[profile staxcoredev]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 993160163427
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoredevro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoredevro --json
+
+[profile staxcoredevro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 993160163427
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoredevnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoredevnw --json
+
+[profile staxcoredevnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 993160163427
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreqa]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreqa --json
+
+[profile staxcoreqa]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 951658411413
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreqaro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreqaro --json
+
+[profile staxcoreqaro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 951658411413
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreqanw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreqanw --json
+
+[profile staxcoreqanw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 951658411413
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreqacde]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreqacde --json
+
+[profile staxcoreqacde]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 010438494934
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreqacdero]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreqacdero --json
+
+[profile staxcoreqacdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 010438494934
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreqacdenw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreqacdenw --json
+
+[profile staxcoreqacdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 010438494934
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcorepreprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcorepreprod --json
+
+[profile staxcorepreprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 220811034818
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcorepreprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcorepreprodro --json
+
+[profile staxcorepreprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 220811034818
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcorepreprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcorepreprodnw --json
+
+[profile staxcorepreprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 220811034818
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcorepreprodcde]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcorepreprodcde --json
+
+[profile staxcorepreprodcde]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 738138308115
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcorepreprodcdero]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcorepreprodcdero --json
+
+[profile staxcorepreprodcdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 738138308115
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcorepreprodcdenw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcorepreprodcdenw --json
+
+[profile staxcorepreprodcdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 738138308115
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreprod]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreprod --json
+
+[profile staxcoreprod]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 720356250490
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreprodro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreprodro --json
+
+[profile staxcoreprodro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 720356250490
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreprodnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreprodnw --json
+
+[profile staxcoreprodnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 720356250490
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreprodcde]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreprodcde --json
+
+[profile staxcoreprodcde]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 751645758432
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreprodcdero]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreprodcdero --json
+
+[profile staxcoreprodcdero]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 751645758432
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcoreprodcdenw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcoreprodcdenw --json
+
+[profile staxcoreprodcdenw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 751645758432
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vsbx]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec sbx --json
+
+[profile sbx]
+credential_process = /opt/homebrew/bin/aws-vault exec --json
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 279944202923
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vsbxro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec sbxro --json
+
+[profile sbxro]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 279944202923
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vsbxnw]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec sbxnw --json
+
+[profile sbxnw]
+sso_start_url = https://d-926764b207.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 279944202923
+sso_role_name = AWSCloudNetworkAdministrator
+region = us-west-2
+output = text
+cli_pager=
+
+
+##########
+# Stax Org
+##########
+
+[profile vstaxaudit]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxaudit --json
+
+[profile staxaudit]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 895769028099
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxauditro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxauditro --json
+
+[profile staxauditro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 895769028099
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxlogs]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxlogs --json
+
+[profile staxcardxlogs]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 642179237999
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxlogsro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxlogsro --json
+
+[profile staxcardxlogsro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 642179237999
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxmaster]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxmaster --json
+
+[profile staxcardxmaster]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 108238480545
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxmasterro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxmasterro --json
+
+[profile staxcardxmasterro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 108238480545
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxnetwork]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxnetwork --json
+
+[profile staxcardxnetwork]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 787222821100
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxnetworkro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxnetworkro --json
+
+[profile staxcardxnetworkro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 787222821100
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxsecurity]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxsecurity --json
+
+[profile staxcardxsecurity]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 776042875543
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxsecurityro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxsecurityro --json
+
+[profile staxcardxsecurityro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 776042875543
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxshared]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxshared --json
+
+[profile staxcardxshared]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 608473297803
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxcardxsharedro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxcardxsharedro --json
+
+[profile staxcardxsharedro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 608473297803
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxlogs]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxlogs --json
+
+[profile staxlogs]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 865135650450
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxlogsro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxlogsro --json
+
+[profile staxlogsro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 865135650450
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxmgmt]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxmgmt --json
+
+[profile staxmgmt]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 309531513830
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxmgmtro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxmgmtro --json
+
+[profile staxmgmtro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 309531513830
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxops]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxops --json
+
+[profile staxops]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 513266707415
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxopsro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxopsro --json
+
+[profile staxopsro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 513266707415
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxsecops]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxsecops --json
+
+[profile staxsecops]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 258880228794
+sso_role_name = AWSAdministratorAccess
+region = us-west-2
+output = text
+cli_pager=
+
+[profile vstaxsecopsro]
+region = us-west-2
+credential_process = /opt/homebrew/bin/aws-vault exec staxsecopsro --json
+
+[profile staxsecopsro]
+sso_start_url = https://staxlabs.awsapps.com/start#/
+sso_region = us-west-2
+sso_account_id = 258880228794
+sso_role_name = AWSReadOnlyAccess
+region = us-west-2
+output = text
+cli_pager=

@@ -42,7 +42,7 @@ cd nix-config
 - bootstrap `nix`
 
 ```sh
-sudo nix run nix-darwin -- switch --flake .$HOST
+sudo nix run nix-darwin -- switch --flake .#$HOST
 ```
 
 - Apply `nix-darwin` configurations

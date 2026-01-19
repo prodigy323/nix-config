@@ -1,6 +1,10 @@
 { pkgs, ... }:
 
 {
+  imports = [
+    ./aws.nix
+  ];
+
   programs.git = {
     enable = true;
     settings = {

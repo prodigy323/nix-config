@@ -6,6 +6,9 @@
 
   homebrew = {
     brews = [
+      "aws-cdk"
+      "aws-vault"
+      "awscli"
       "httpie"
     ];
 

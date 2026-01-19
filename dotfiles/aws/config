@@ -1,0 +1,352 @@
+[default]
+cli_auto_prompt = off
+
+##########
+
+# Alpha
+
+##########
+
+[profile valphamasterro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphamasterro --json
+
+[profile alphamasterro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 533267190695
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphamaster]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphamaster --json
+
+[profile alphamaster]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 533267190695
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphaauditro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphaauditro --json
+
+[profile alphaauditro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 975050122065
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphaaudit]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphaaudit --json
+
+[profile alphaaudit]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 975050122065
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphalogsro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphalogsro --json
+
+[profile alphalogsro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 211125316649
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphalogs]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphalogs --json
+
+[profile alphalogs]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 211125316649
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphamgmtro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphamgmtro --json
+
+[profile alphamgmtro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 354096886483
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphamgmt]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphamgmt --json
+
+[profile alphamgmt]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 354096886483
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphaprodro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphaprodro --json
+
+[profile alphaprodro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 851725480346
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphaprod]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphaprod --json
+
+[profile alphaprod]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 851725480346
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphasbro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphasbro --json
+
+[profile alphasbro]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 533266982066
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile valphasb]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec alphasb --json
+
+[profile alphasb]
+sso_start_url = https://sancusit.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 533266982066
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+##########
+
+# Beta
+
+##########
+
+[profile vbetaauditro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betaauditro --json
+
+[profile betaauditro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 047732578206
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetaaudit]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betaaudit --json
+
+[profile betaaudit]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 047732578206
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetamasterro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betamasterro --json
+
+[profile betamasterro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 615322001392
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetamaster]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betamaster --json
+
+[profile betamaster]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 615322001392
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetalogsro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betalogsro --json
+
+[profile betalogsro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 133171600768
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetalogs]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betalogs --json
+
+[profile betalogs]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 133171600768
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetamgmtro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betamgmtro --json
+
+[profile betamgmtro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 992382671765
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetamgmt]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betamgmt --json
+
+[profile betamgmt]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 992382671765
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetaprodro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betaprodro --json
+
+[profile betaprodro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 471112924406
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetaprod]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betaprod --json
+
+[profile betaprod]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 471112924406
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetasb1ro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betasb1ro --json
+
+[profile betasb1ro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 730335367332
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetasb1]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betasb1 --json
+
+[profile betasb1]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 730335367332
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetasb2ro]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betasb2ro --json
+
+[profile betasb2ro]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 058264364169
+sso_role_name = AWSReadOnlyAccess
+region = us-east-1
+output = text
+cli_pager=
+
+[profile vbetasb2]
+region = us-east-1
+credential_process = /opt/homebrew/bin/aws-vault exec betasb2 --json
+
+[profile betasb2]
+sso_start_url = https://prodigy323.awsapps.com/start#/
+sso_region = us-east-1
+sso_account_id = 058264364169
+sso_role_name = AWSAdministratorAccess
+region = us-east-1
+output = text
+cli_pager=
