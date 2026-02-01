@@ -3,7 +3,12 @@
 {
   home.stateVersion = "23.11";
 
-  programs.git.enable = true;
+  programs.git = {
+    enable = true;
+    settings = {
+      core.editor = "vim";
+    };
+  };
 
   # Example dotfile
   # home.file.".zshrc".source = ./dotfiles/zshrc;
