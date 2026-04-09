@@ -9,7 +9,6 @@
       "aws-cdk"
       "aws-vault"
       "awscli"
-      "httpie"
     ];
 
     casks = [

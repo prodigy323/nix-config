@@ -21,6 +21,7 @@
       "uv"
       "yq"
       "zoxide"
+      "httpie"
     ];
 
     casks = [
