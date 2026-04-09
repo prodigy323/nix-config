@@ -15,7 +15,7 @@
 
   programs.zsh = {
     initContent = ''
-      eval "$(zoxide activate zsh)"
+      eval "$(zoxide init zsh)"
 
       # load per-host aliases for Mars
       if [ -f "$HOME/.config/zsh/zsh_aliases_mars" ]; then
