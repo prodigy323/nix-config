@@ -36,14 +36,15 @@ nix flake --help
 
 ## Usage
 
-- Create local SSH key
+### Create local SSH key
 
 ```sh
 ssh-keygen -t ed25519
 ```
 
-- Add the SSH key to Github account `prodigy323`
-- Clone this repository
+Add the SSH key to Github account `prodigy323`
+
+### Clone this repository
 
 ```sh
 cd ~ # or cd $HOME
@@ -52,19 +53,19 @@ git clone git@prodigy323.github.com:prodigy323/nix-config.git # if on Venus due 
 cd nix-config
 ```
 
-Where HOST is...
+### HOST is...
 
 - _Mars_ - Macbook Pro 14" M1 Pro
 - _Aero_ - Macbook Air 13" M2
 - _Venus_ - Macbook Pro 16" M2 Pro
 
-- bootstrap `nix`
+### Bootstrap `nix`
 
 ```sh
 sudo -H nix run nix-darwin -- switch --flake .#HOST
 ```
 
-- Apply `nix-darwin` configurations
+### Apply `nix-darwin` configurations
 
 ```sh
 sudo darwin-rebuild build --flake .#HOST # verify build
