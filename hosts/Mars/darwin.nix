@@ -12,7 +12,18 @@
     ];
 
     casks = [
+      "1password"
+      "1password-cli"
+      "dropbox"
+      #"expressvpn"
+      #"google-chrome"
+      #"google-drive"
+      "obsidian"
+      #"parallels"
+      "todoist"
+      "todoist-app"
       "visual-studio-code"
+      #"warp"
     ];
   };
 }
