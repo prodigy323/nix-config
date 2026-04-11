@@ -2,7 +2,7 @@
 
 {
   system.primaryUser = username;
-  networking.hostName = "Joes-MacBook-Pro.local";
+  networking.hostName = "Joes-MacBook-Pro";
 
   homebrew = {
     brews = [
