@@ -6,9 +6,22 @@
 
 `xcode-select --install`
 
+- Install Homebrew:
+
+```sh
+# download and install homebrew
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# append to .zprofile
+$ (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/joehong/.zprofile
+
+# initialize homebrew
+$ eval "$(/opt/homebrew/bin/brew shellenv)"
+```
+
 - Install Nix (recommended to use [Determinate Systems installer](https://github.com/DeterminateSystems/nix-installer)):
 
-`curl -L https://install.determinate.systems/nix | sh -s -- install`
+`curl -L https://install.determinate.systems/nix | sudo sh -s -- install`
 
 - Verify installation
 
@@ -39,10 +52,16 @@ git clone git@prodigy323.github.com:prodigy323/nix-config.git # if on Venus due 
 cd nix-config
 ```
 
+Where HOST is...
+
+- _Mars_ - Macbook Pro 14" M1 Pro
+- _Aero_ - Macbook Air 13" M2
+- _Venus_ - Macbook Pro 16" M2 Pro
+
 - bootstrap `nix`
 
 ```sh
-sudo nix run nix-darwin -- switch --flake .#g$HOST
+sudo -H nix run nix-darwin -- switch --flake .#HOST
 ```
 
 - Apply `nix-darwin` configurations
@@ -51,12 +70,6 @@ sudo nix run nix-darwin -- switch --flake .#g$HOST
 sudo darwin-rebuild build --flake .#HOST # verify build
 sudo darwin-rebuild switch --flake .#HOST # execute the configuration changes
 ```
-
-Where HOST is...
-
-- _Mars_ - Macbook Pro 14" M1 Pro
-- _Aero_ - Macbook Air 13" M2
-- _Venus_ - Macbook Pro 16" M2 Pro
 
 ---
 
