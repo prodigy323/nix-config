@@ -2,11 +2,11 @@
 
 ## ⚠️ Prerequisites
 
-- Install Xcode CLT (command-line tool):
+### Install Xcode CLT (command-line tool):
 
 `xcode-select --install`
 
-- Install Homebrew:
+### Install Homebrew:
 
 ```sh
 # download and install homebrew
@@ -19,11 +19,11 @@ $ (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/joehong/.zp
 $ eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
-- Install Nix (recommended to use [Determinate Systems installer](https://github.com/DeterminateSystems/nix-installer)):
+### Install Nix (recommended to use [Determinate Systems installer](https://github.com/DeterminateSystems/nix-installer)):
 
 `curl -L https://install.determinate.systems/nix | sudo sh -s -- install`
 
-- Verify installation
+### Verify Nix installation
 
 ```sh
 # restart terminal
