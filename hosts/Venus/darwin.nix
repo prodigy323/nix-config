@@ -28,19 +28,9 @@
     ];
 
     casks = [
-      "1password"
-      "1password-cli"
       "dbeaver-community"
-      "dropbox"
-      "font-meslo-lg-nerd-font"
-      "font-symbols-only-nerd-font"
-      "google-drive"
-      "obsidian"
       "royal-tsx"
       "sequel-ace"
-      "todoist"
-      "todoist-app"
-      "visual-studio-code"
       "warp"
     ];
   };

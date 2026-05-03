@@ -25,14 +25,23 @@
     ];
 
     casks = [
+      "1password"
+      "1password-cli"
       #"brave-browser"
+      "dropbox"
+      "expressvpn"
       #"firefox"
+      #"google-chrome"
+      "google-drive"
+      "obsidian"
+      "todoist"
+      "todoist-app"
+      "visual-studio-code"
       "font-meslo-lg-nerd-font"
       "font-symbols-only-nerd-font"
       "ghostty"
-      #"google-chrome"
       #"iterm2"
-      #"raycast"
+      "raycast"
       "shottr"
     ];
 
