@@ -34,7 +34,6 @@
       #"google-chrome"
       "google-drive"
       "obsidian"
-      "todoist"
       "todoist-app"
       "visual-studio-code"
       "font-meslo-lg-nerd-font"

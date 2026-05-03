@@ -39,6 +39,23 @@
     "com.microsoft.VSCode" = {
       ApplePressAndHoldEnabled = false;
     };
+
+    "com.apple.symbolichotkeys" = {
+      AppleSymbolicHotKeys = {
+        # Spotlight (Cmd+Space)
+        "64" = {
+          enabled = true;
+          value = {
+            parameters = [ 32 49 1572864 ]; # Option + Space
+            type = "standard";
+          };
+        };
+      };
+    };
+
+    "com.raycast.macos" = {
+      raycastGlobalHotkey = "Command-49"; # Cmd + Space
+    };
   };
 }
 
