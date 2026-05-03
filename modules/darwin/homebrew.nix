@@ -29,7 +29,7 @@
       "1password-cli"
       #"brave-browser"
       "dropbox"
-      "expressvpn"
+      #"expressvpn"
       #"firefox"
       #"google-chrome"
       "google-drive"
