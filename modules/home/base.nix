@@ -125,12 +125,18 @@
 
   ## zsh_aliases
   xdg.configFile."zsh/zsh_aliases".text = ''
+    alias vi="vim"
     alias rm="trash"
     alias rmdir="trash"
     alias cat="bat -Pp"
     alias ls="eza --group-directories-first"
     alias l="ls -1"
     alias fzf="fzf --preview 'bat --style=numbers --color=always {}'"
+  '';
+
+  ## vimrc
+  xdg.configFile."vim/vimrc".text = ''
+    syntax on
   '';
 }
 
